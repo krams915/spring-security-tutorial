@@ -1,4 +1,7 @@
-This is the source code for the tutorial:
+Sample application demonstrating Spring Security 3.1 and 
+how to implement a custom UserDetailsService with Spring Data JPA
+
+For description, please see the original blog:
 
 "Spring Security 3.1 - Implement UserDetailsService with Spring Data JPA"
 http://krams915.blogspot.com/2012/01/spring-security-31-implement_5023.html

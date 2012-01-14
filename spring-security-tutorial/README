@@ -1,8 +1,6 @@
-
 Description
 ===========
-Sample application demonstrating how to implement a custom UserDetailsService with Spring Security 3.1 
-and Spring Data JPA
+Sample application demonstrating how to implement a custom UserDetailsService with Spring Security 3.1 and Spring Data JPA
 
 To read the whole guide, please see the original blog:
 

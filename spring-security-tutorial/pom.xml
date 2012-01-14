@@ -345,15 +345,8 @@
   </build>
 
   <repositories>
-  
-  	<repository>
-		<id>org.springframework.maven.milestone</id>
-		<name>Spring Maven Milestone Repository</name>
-		<url>http://maven.springframework.org/milestone</url>
-		<snapshots><enabled>false</enabled></snapshots>
-	</repository>
 	
-  	<!-- For main Spring releases
+  	<!-- For main Spring releases -->
 	<repository>
 		<id>org.springframework.maven.release</id>
 		<name>Spring Maven Release Repository</name>
@@ -362,7 +355,7 @@
 		<snapshots><enabled>false</enabled></snapshots>
 	</repository>
 	
-	For testing against latest Spring snapshots
+	<!-- For testing against latest Spring snapshots -->
 	<repository>
 		<id>org.springframework.maven.snapshot</id>
 		<name>Spring Maven Snapshot Repository</name>
@@ -371,7 +364,7 @@
 		<snapshots><enabled>true</enabled></snapshots>
 	</repository>
 	
-	For developing against latest Spring milestones
+	<!-- For developing against latest Spring milestones -->
 	<repository>
 		<id>org.springframework.maven.milestone</id>
 		<name>Spring Maven Milestone Repository</name>
@@ -385,12 +378,12 @@
 		<url>https://repository.jboss.org/nexus/content/repositories/releases</url>
 	</repository>
 	
-	Repo for maven-copy-plugin
+	<!-- Repo for maven-copy-plugin -->
 	<repository>
 		<id>evgeny-goldin.org</id>
 		<name>Evgeny Goldin Repository</name>
 		<url>http://evgeny-goldin.org/artifactory/repo/</url>
-	</repository> -->
+	</repository>
 	
   </repositories>
 </project>

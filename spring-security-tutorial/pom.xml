@@ -317,29 +317,31 @@
 			</executions>
 		</plugin>
 		
-		<plugin>
-			<groupId>com.goldin.plugins</groupId>
-			<artifactId>maven-copy-plugin</artifactId>
-			<version>${maven.copy.plugin.version}</version>
-			<executions>
-				<execution>
-					<id>create-archive</id>
-					<!-- Select compile phase so that resources are copied first before being packaged! -->
-					<phase>compile</phase>
-					<goals>
-						<goal>copy</goal>
-					</goals>
-					<configuration>
-						<resources>
-							<resource>
-								<targetPath>${project.build.outputDirectory}/META-INF</targetPath>
-								<directory>${project.basedir}/src/main/java/META-INF</directory>
-							</resource>
-						</resources>
-					</configuration>
-				</execution>
-			</executions>
-		</plugin>
+		<!-- 
+                The Resources Plugin handles the copying of project resources to the output directory. 
+                @see http://maven.apache.org/plugins/maven-resources-plugin/index.html 
+                -->
+                <plugin>
+                        <artifactId>maven-resources-plugin</artifactId>
+                        <version>2.5</version>
+                        <executions>
+                                <execution>
+                                        <id>copy-meta-inf</id>
+                                        <phase>compile</phase>
+                                        <goals>
+                                                <goal>copy-resources</goal>
+                                        </goals>
+                                        <configuration>
+                                                <outputDirectory>${project.build.outputDirectory}/META-INF</outputDirectory>
+                                                <resources>
+                                                        <resource>
+                                                                <directory>${project.basedir}/src/main/java/META-INF</directory>
+                                                        </resource>
+                                                </resources>
+                                        </configuration>
+                                </execution>
+                        </executions>
+                </plugin>
     </plugins>
     
   </build>
@@ -379,15 +381,4 @@
 	</repository>
 	
   </repositories>
-  
-  <pluginRepositories>
-  
-	<!-- Repo for maven-copy-plugin -->
-	<pluginRepository>
-		<id>evgeny-goldin.org</id>
-		<name>Evgeny Goldin Repository</name>
-		<url>http://evgeny-goldin.org/artifactory/repo/</url>
-	</pluginRepository> 
-	
-  </pluginRepositories>
 </project>

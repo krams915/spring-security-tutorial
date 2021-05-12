@@ -12,7 +12,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     
     <spring.core.version>3.1.0.RELEASE</spring.core.version>
-    <spring.security.core.version>3.1.0.RELEASE</spring.security.core.version>
+    <spring.security.core.version>5.2.10.RELEASE</spring.security.core.version>
 	<spring.data.jpa.version>1.1.0.M1</spring.data.jpa.version>
     
   	<cglib.version>2.2</cglib.version>

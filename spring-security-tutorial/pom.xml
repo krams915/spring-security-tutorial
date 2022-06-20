@@ -18,7 +18,7 @@
   	<cglib.version>2.2</cglib.version>
   	<aspectj.version>1.6.10</aspectj.version>
   	
-  	<mysql.connector.version>5.1.16</mysql.connector.version>
+  	<mysql.connector.version>8.0.28</mysql.connector.version>
   	<hibernate.entitymanager.version>3.6.3.Final</hibernate.entitymanager.version>
   	<hibernate.jpa-api.version>2.0-cr-1</hibernate.jpa-api.version>
   	<c3p0.version>0.9.1.2</c3p0.version>
